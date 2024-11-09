@@ -1,0 +1,16 @@
+<div class="tphoto"
+  [@cardAnimator]="animationState"
+  (@cardAnimator.done)="resetAnimationState($event)"
+  (swipeleft)='startAnimation("swipeleft")' 
+  (swiperight)='startAnimation("swiperight")'
+  (click)="toggleExtraInfo()">
+  
+  <img [src]="users[index].picture" title="tphoto" style="width: 350px; height: 350px;" alt="Tinder Photo" />
+  
+  <div *ngIf="!showExtraInfo" class="pinfo">{{users[index].name}}, <span class="age">{{users[index].age}}</span></div>
+  
+  <div class="extra-info" *ngIf="showExtraInfo">
+    <div class="pinfo">{{users[index].name}}, <span class="age">{{users[index].age}}</span></div>
+    <p>{{ users[index].extraInfo }}</p>
+  </div>
+</div>

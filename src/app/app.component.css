@@ -1,0 +1,66 @@
+
+
+  :host {
+    background: linear-gradient(135deg, #FFA500, #32CD32);
+    color: #ffffff;
+  }
+
+
+
+  mat-toolbar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #ff8c00, #32cd32); /* Gradient background */
+    color: #fff;
+  }
+
+  .toolbar-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .content {
+    padding-top: 64px; /* Offset content for the fixed toolbar height */
+    background: linear-gradient(135deg, #FFA500, #32CD32);
+    height: 100%;;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .center-card {
+    width: auto; 
+    height: auto; 
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+
+  .toast-success {
+    background-color: green !important;
+  }
+  
+  .toast-error {
+    background-color: red !important;
+  }
+  
+  .toast-warning {
+    background-color: orange !important;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+  }
+  
+  mat-icon {
+    margin-right: 8px;
+  }
